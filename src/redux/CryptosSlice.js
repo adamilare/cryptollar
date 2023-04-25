@@ -9,11 +9,9 @@ const initialState = {
 
 const searchCryptosHandler = (state, { payload }) => ({
   ...state,
-  cryptos: state.cryptos.map((crypto) =>
-    crypto.name.toLowerCase().includes(payload.toLowerCase())
-      ? { ...crypto, filtered: true }
-      : { ...crypto, filtered: false },
-  ),
+  cryptos: state.cryptos.map((crypto) => (crypto.name.toLowerCase().includes(payload.toLowerCase())
+    ? { ...crypto, filtered: true }
+    : { ...crypto, filtered: false })),
 });
 
 const cryptoSlice = createSlice({

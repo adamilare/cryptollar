@@ -12,13 +12,14 @@ const NavBar = () => {
     dispatch(searchCryptos(e.target.value));
   };
 
-  const getNavClass = () =>
-    location.pathname.match('cryptocurrency') ? 'detail' : 'home';
+  const getNavClass = () => (location.pathname.match('cryptocurrency') ? 'detail' : 'home');
 
   return (
     <nav className={getNavClass()}>
       <NavLink to="/home" className="nav-home">
-        <BsChevronLeft /> Home
+        <BsChevronLeft />
+        {' '}
+        Home
       </NavLink>
       {!location.pathname.match('cryptocurrency') && (
         <div className="nav-search">

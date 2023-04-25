@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 const CryptoItem = ({ item }) => {
-  const { id, name, price, icon } = item;
+  const {
+    id, name, price, icon,
+  } = item;
   const navigate = useNavigate();
 
   return (

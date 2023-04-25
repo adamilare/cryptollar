@@ -3,31 +3,30 @@ import axios from 'axios';
 
 const listUrl = 'https://api.coinstats.app/public/v1/coins/';
 
-const formatCryptos = (data) =>
-  data.map(
-    ({
-      id,
-      name,
-      symbol,
-      price,
-      volume,
-      marketCap,
-      priceChange1h,
-      priceChange1d,
-      icon,
-    }) => ({
-      id,
-      name,
-      symbol,
-      price,
-      volume,
-      marketCap,
-      priceChange1h,
-      priceChange1d,
-      icon,
-      filtered: true,
-    }),
-  );
+const formatCryptos = (data) => data.map(
+  ({
+    id,
+    name,
+    symbol,
+    price,
+    volume,
+    marketCap,
+    priceChange1h,
+    priceChange1d,
+    icon,
+  }) => ({
+    id,
+    name,
+    symbol,
+    price,
+    volume,
+    marketCap,
+    priceChange1h,
+    priceChange1d,
+    icon,
+    filtered: true,
+  }),
+);
 
 const formatCryptoDetail = ({
   id,

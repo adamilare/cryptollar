@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Layout componet renders as expected! 1`] = `
+<nav
+  className="home"
+>
+  <a
+    className="nav-home"
+    href="/home"
+    onClick={[Function]}
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 16 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+        fillRule="evenodd"
+      />
+    </svg>
+     Home
+  </a>
+  <div
+    className="nav-search"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+    />
+  </div>
+  <div />
+</nav>
+`;

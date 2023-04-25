@@ -30,35 +30,37 @@ const CryptoDetails = () => {
           />
           <h2>{cryptoDetail.data.name}</h2>
           <table>
-            <tr>
-              <td>Name</td>
-              <td>{cryptoDetail.data.name}</td>
-            </tr>
-            <tr>
-              <td>Rank</td>
-              <td>{cryptoDetail.data.rank}</td>
-            </tr>
-            <tr>
-              <td>Symbol</td>
-              <td>{cryptoDetail.data.symbol}</td>
-            </tr>
-            <tr>
-              <td>Price</td>
-              <td>{`$${cryptoDetail.data.price.toFixed(2)}`}</td>
-            </tr>
-            <tr>
-              <td>Volume 24hr</td>
-              <td>{`$${getValue(cryptoDetail.data.priceChange1d)}`}</td>
-            </tr>
-            <tr>
-              <td>Hourly Price Change</td>
-              <td>{`$${getValue(cryptoDetail.data.priceChange1h)}`}</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td>{cryptoDetail.data.name}</td>
+              </tr>
+              <tr>
+                <td>Rank</td>
+                <td>{cryptoDetail.data.rank}</td>
+              </tr>
+              <tr>
+                <td>Symbol</td>
+                <td>{cryptoDetail.data.symbol}</td>
+              </tr>
+              <tr>
+                <td>Price</td>
+                <td>{`$${cryptoDetail.data.price.toFixed(2)}`}</td>
+              </tr>
+              <tr>
+                <td>Volume 24hr</td>
+                <td>{`$${getValue(cryptoDetail.data.priceChange1d)}`}</td>
+              </tr>
+              <tr>
+                <td>Hourly Price Change</td>
+                <td>{`$${getValue(cryptoDetail.data.priceChange1h)}`}</td>
+              </tr>
 
-            <tr>
-              <td>Market Capy</td>
-              <td>{`$${getValue(cryptoDetail.data.marketCap)}`}</td>
-            </tr>
+              <tr>
+                <td>Market Capy</td>
+                <td>{`$${getValue(cryptoDetail.data.marketCap)}`}</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       )}

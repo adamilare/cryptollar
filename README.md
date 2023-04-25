@@ -34,7 +34,7 @@ CRYPTOLLAR - is a simple website for presenting prices of cryptocurrencies. It i
 
 ## 🛠 Screenshots <a name="screenshots"></a>
 
-<img src="./src/assets/crytollar_screenshot.JPG" width="70%" alt="desktop screenshot" />
+<img src="./src/assets/crytollar_screenshot-d.JPG" width="70%" alt="desktop screenshot" />
 
 ## 🛠 Built With <a name="built-with"></a>
 
